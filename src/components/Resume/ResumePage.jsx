@@ -15,7 +15,7 @@ function ResumePage() {
       <section className="my-resume mb-5">
         <div className="d-flex align-items-center justify-content-center ">
           <img
-            src="/assets/resume.jpg"
+            src="/assets/resume.png"
             className="img-fluid"
             alt="resume"
             style={{ borderRadius: "10px" }}
