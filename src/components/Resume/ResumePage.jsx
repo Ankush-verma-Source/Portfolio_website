@@ -15,7 +15,7 @@ function ResumePage() {
       <section className="my-resume mb-5">
         <div className="d-flex align-items-center justify-content-center ">
           <img
-            src="/assets/resume.png"
+            src="/assets/updatedResume.png"
             className="img-fluid"
             alt="resume"
             style={{ borderRadius: "10px" }}
@@ -23,7 +23,7 @@ function ResumePage() {
         </div>
       </section>
       
-      <a href="/assets/resume.pdf" download style={{ textDecoration: "none" }}>
+      <a href="/assets/updatedResume.pdf" download style={{ textDecoration: "none" }}>
         <button className="btn btn-primary px-4 py-2">
           <FaCloudDownloadAlt size={20} /> Download
         </button>
