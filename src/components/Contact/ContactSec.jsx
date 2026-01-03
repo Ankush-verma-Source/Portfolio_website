@@ -152,12 +152,12 @@ function ContactSec() {
               </h5>
               <p style={{ color: "#6c757d", fontWeight: "500" }}>
                 <a
-                  href="mailto:megav369@gmail.com"
+                  href="mailto:ankushverma100009@gmail.com"
                   className="text-decoration-none"
                   style={{ color: "#6c757d", fontWeight: "500" }}
                 >
                   {" "}
-                  megav369@gmail.com
+                  ankushverma100009@gmail.com
                 </a>
               </p>
             </div>

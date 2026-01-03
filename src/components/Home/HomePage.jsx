@@ -71,7 +71,7 @@ function HomePage() {
           </a>
 
           <a
-            href="mailto:megav369@gmail.com"
+            href="mailto:ankushverma100009@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: " rgb(178, 107, 232)", cursor: "pointer" }}

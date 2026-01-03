@@ -118,7 +118,7 @@ function AboutPage() {
             <div className="d-flex my-location-2">
               <div>
                 <h5 style={{ color: "#EE82EE", fontWeight: "bold" }}>Email</h5>
-                <p>megav369@gmail.com</p>
+                <p>ankushverma100009@gmail.com</p>
               </div>
               <div>
                 <h5 style={{ color: "#EE82EE", fontWeight: "bold" }}>Degree</h5>
