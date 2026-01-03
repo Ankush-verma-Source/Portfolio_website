@@ -57,20 +57,25 @@ const skills = [
 function AboutPage() {
   let [activeTab, setActiveTab] = useState(1);
 
-
   return (
     <div className="container-lg my-about-container mb-5">
       <div className="my-about-navigation">
         <ul className="list-unstyled text-light">
-          <li onClick={()=>setActiveTab(1)} className={activeTab === 1 ? "my-about-active" : ""}>
-            <a href="#about" >About</a>
+          <li
+            onClick={() => setActiveTab(1)}
+            className={activeTab === 1 ? "my-about-active" : ""}
+          >
+            <a href="#about">About</a>
           </li>
-          <li onClick={()=>setActiveTab(2)} className={activeTab === 2 ? "my-about-active" : ""}>
-            <a href="#skills" >Skills</a>
+          <li
+            onClick={() => setActiveTab(2)}
+            className={activeTab === 2 ? "my-about-active" : ""}
+          >
+            <a href="#skills">Skills</a>
           </li>
         </ul>
       </div>
-      <div id="about" className="my-about" >
+      <div id="about" className="my-about">
         <div className="text-start my-about-content">
           <h2 className="mb-4" style={{ color: "#EE82EE", fontWeight: "bold" }}>
             About me
@@ -81,14 +86,15 @@ function AboutPage() {
             Engineering at Manipal University Jaipur, Jaipur.
           </p>
           <p>
-            I have completed comprehensive training in Data Structures and
+            {/* I have completed comprehensive training in Data Structures and
             Algorithms using Java, solving over 300 problems to strengthen my
-            foundation. Alongside this, I have hands-on experience with the MERN
-            stack—MongoDB, Express.js, React, and Node.js—for full-stack web
-            development. My skills also extend to Firebase services and
-            Bootstrap for UI design. I am proficient in implementing
-            authentication strategies using Passport.js and managing session and
-            database operations with MongoDB, MySQL.
+            foundation. Alongside this, <br /> */}
+            I have hands-on experience with the MERN stack—MongoDB, Express.js,
+            React, and Node.js—for full-stack web development. My skills also
+            extend to Firebase services and Bootstrap for UI design. I am
+            proficient in implementing authentication strategies using
+            Passport.js , JWT and managing session and database operations with
+            MongoDB, MySQL.
             <br />
             {/* Additionally, I have explored Web3 and blockchain technologies like
             Solidity and smart contracts. */}
