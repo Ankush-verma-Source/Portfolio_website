@@ -9,9 +9,9 @@ function ResumePage() {
       >
         My Resume
       </h1>
-      <p className="text-center" style={{ color: "grey", fontWeight: "bold" }}>
+      {/* <p className="text-center" style={{ color: "grey", fontWeight: "bold" }}>
         updating Soon...
-      </p>
+      </p> */}
       <section className="my-resume mb-5">
         <div className="d-flex align-items-center justify-content-center ">
           <img
