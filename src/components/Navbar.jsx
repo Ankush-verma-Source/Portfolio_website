@@ -45,11 +45,11 @@ function Navbar() {
                   Resume
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink  className={({isActive})=>`nav-link ${isActive?"active":""}`} to="/projects">
                   Projects
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink  className={({isActive})=>`nav-link ${isActive?"active":""}`} to="/contact">
                   Contact
