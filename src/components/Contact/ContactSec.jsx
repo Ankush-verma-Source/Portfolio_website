@@ -25,9 +25,14 @@ function ContactSec() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_zspmn24", "template_ncqbuww", form.current, {
-        publicKey: "mvuhASCdAbNZ2AEF3",
-      })
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           setIsSent(true);
