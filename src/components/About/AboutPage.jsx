@@ -1,4 +1,4 @@
-import { useState } from "react";
+// useState removed as internal navigation is removed
 
 const skills = [
   {
@@ -55,29 +55,11 @@ const skills = [
 ];
 
 function AboutPage() {
-  let [activeTab, setActiveTab] = useState(1);
-
   return (
     <div className="container-lg my-about-container mb-5">
-      <div className="my-about-navigation">
-        <ul className="list-unstyled text-light">
-          <li
-            onClick={() => setActiveTab(1)}
-            className={activeTab === 1 ? "my-about-active" : ""}
-          >
-            <a href="#about">About</a>
-          </li>
-          <li
-            onClick={() => setActiveTab(2)}
-            className={activeTab === 2 ? "my-about-active" : ""}
-          >
-            <a href="#skills">Skills</a>
-          </li>
-        </ul>
-      </div>
       <div id="about" className="my-about">
         <div className="text-start my-about-content">
-          <h2 className="mb-4" style={{ color: "#EE82EE", fontWeight: "bold" }}>
+          <h2 className="mb-4 text-violet fw-bold">
             About me
           </h2>
           <p>
@@ -111,23 +93,23 @@ function AboutPage() {
           <div className="my-about-location mt-5">
             <div className="d-flex my-location-1 ">
               <div>
-                <h5 style={{ color: "#EE82EE", fontWeight: "bold" }}>
+                <h5 className="text-violet fw-bold">
                   Location
                 </h5>
                 <p>Jaipur, Rajasthan, India</p>
               </div>
               <div>
-                <h5 style={{ color: "#EE82EE", fontWeight: "bold" }}>Study</h5>
+                <h5 className="text-violet fw-bold">Study</h5>
                 <p>Manipal University Jaipur</p>
               </div>
             </div>
             <div className="d-flex my-location-2">
               <div>
-                <h5 style={{ color: "#EE82EE", fontWeight: "bold" }}>Email</h5>
+                <h5 className="text-violet fw-bold">Email</h5>
                 <p>ankushverma100009@gmail.com</p>
               </div>
               <div>
-                <h5 style={{ color: "#EE82EE", fontWeight: "bold" }}>Degree</h5>
+                <h5 className="text-violet fw-bold">Degree</h5>
                 <p>Bachelor of Computer Science and Engineering</p>
               </div>
             </div>
@@ -143,9 +125,7 @@ function AboutPage() {
         </div>
       </div>
       <div id="skills" className="my-about-skills mt-5">
-        <h1
-          style={{ color: "#EE82EE", fontWeight: "bold", textAlign: "center" }}
-        >
+        <h1 className="text-violet fw-bold text-center">
           Skills
         </h1>
         <div className="skills-section  py-5">

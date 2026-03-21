@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer() {
@@ -6,8 +5,8 @@ function Footer() {
     <div className=" bg-transparent my-footer mt-5 pb-3">
       <footer className="container-fluid px-3">
         <div className=" my-footer-content">
-          <Link
-            to="/"
+          <a
+            href="#home"
             style={{ textDecoration: "none" }}
             className="cursor-pointer"
           >
@@ -18,7 +17,7 @@ function Footer() {
               <span className="surname">Verma</span>
               <span className="tag">&gt;</span>
             </span>
-          </Link>
+          </a>
           <p className="m-0 py-4 text-center">
             &copy; 2025 Ankush Verma. All rights reserved.
           </p>

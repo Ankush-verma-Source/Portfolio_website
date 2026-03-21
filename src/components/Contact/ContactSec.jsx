@@ -71,6 +71,7 @@ function ContactSec() {
 
   return (
     <div className="container-lg my-contact-container mb-5">
+      <h1 className="text-center text-violet fw-bold w-100 mt-5">Get in Touch</h1>
       <div className="my-contact">
         <ToastContainer />
         <Lottie
@@ -82,7 +83,6 @@ function ContactSec() {
           className="text-center "
           id="contact-us-lottie"
         />
-        <h2 style={{ color: "#ee82ee", fontWeight: "bold" }}>Get in Touch</h2>
         {/* <div className="my-contant-form-container"> */}
         <div className="my-contact-form row">
           <form ref={form} className="col-lg-6 px-4" onSubmit={sendEmail}>
@@ -150,7 +150,7 @@ function ContactSec() {
             <div className="mb-3">
               <h5>
                 <i
-                  class="fa-solid fa-envelope"
+                  className="fa-solid fa-envelope"
                   style={{ color: "#ee82ee", fontSize: "1rem" }}
                 ></i>{" "}
                 Email
@@ -169,7 +169,7 @@ function ContactSec() {
             <div className="mb-3">
               <h5>
                 <i
-                  class="fa-solid fa-phone"
+                  className="fa-solid fa-phone"
                   style={{ color: "#ee82ee", fontSize: "1rem" }}
                 ></i>{" "}
                 Phone
@@ -179,7 +179,7 @@ function ContactSec() {
             <div className="mb-3">
               <h5>
                 <i
-                  class="fa-brands fa-square-linkedin"
+                  className="fa-brands fa-square-linkedin"
                   style={{ color: "#ee82ee", fontSize: "1rem" }}
                 ></i>{" "}
                 Linkedin
@@ -199,7 +199,7 @@ function ContactSec() {
             <div className="mb-3">
               <h5>
                 <i
-                  class="fa-brands fa-github"
+                  className="fa-brands fa-github"
                   style={{ color: "#ee82ee", fontSize: "1rem" }}
                 ></i>{" "}
                 GitHub
@@ -219,7 +219,7 @@ function ContactSec() {
             <div className="mb-3">
               <h5>
                 <i
-                  class="fa-solid fa-location-dot"
+                  className="fa-solid fa-location-dot"
                   style={{ color: "#ee82ee", fontSize: "1rem" }}
                 ></i>
                 Location
@@ -237,7 +237,20 @@ function ContactSec() {
           </div>
         </div>
       </div>
-      <div className="my-contact-info bg-danger "></div>
+      <div className="my-home-connect mt-5 pt-4 text-center w-100">
+        <h1 className="text-violet fw-bold mb-4">Find me on</h1>
+        <div className="d-flex justify-content-center gap-5 pt-3">
+          <a href="https://www.linkedin.com/in/ankushverma109/" target="_blank" rel="noopener noreferrer" className="text-purple-light">
+            <i className="fa-brands fa-linkedin" style={{ fontSize: "2rem" }}></i>
+          </a>
+          <a href="https://github.com/Ankush-verma-Source/" target="_blank" rel="noopener noreferrer" className="text-purple-light">
+            <i className="fa-brands fa-github" style={{ fontSize: "2rem" }}></i>
+          </a>
+          <a href="mailto:ankushverma100009@gmail.com" target="_blank" rel="noopener noreferrer" className="text-purple-light">
+            <i className="fa-solid fa-envelope text-purple-light" style={{ fontSize: "2rem" }}></i>
+          </a>
+        </div>
+      </div>
     </div>
     //  </div>
   );

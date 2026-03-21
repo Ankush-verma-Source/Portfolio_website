@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 // import ComputerAnimation from "../../../public/assets/ProgrammingComputer.json";
 import { Typewriter } from "react-simple-typewriter";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+// Icons moved towards the bottom page
 function HomePage() {
   return (
     <div className="container-lg my-home-container mb-5">
@@ -26,6 +26,10 @@ function HomePage() {
               id="typewriter"
             />
           </p>
+          <div className="mt-4 d-flex gap-3 my-home-buttons">
+             <a href="#resume" className="btn btn-gradient px-4 py-2">View Resume</a>
+             <a href="/assets/resume.pdf" download className="btn btn-outline-light px-4 py-2 fw-bold">Download CV</a>
+          </div>
         </div>
         <div className="my-home-computer">
           <Lottie
@@ -39,51 +43,7 @@ function HomePage() {
           />
         </div>
       </div>
-      <div className="my-home-connect">
-        <h1 className="fw-bold">Find me on </h1>
-        <div className="d-flex justify-content-evenly pt-3 ">
-          <a
-            href="https://www.linkedin.com/in/ankushverma109/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: " rgb(178, 107, 232)", cursor: "pointer" }}
-          >
-            <FaLinkedinIn
-              size={28}
-              className="icon"
-              style={{ color: " rgb(178, 107, 232)", cursor: "pointer" }}
-            />
-            {/* linkedin */}
-          </a>
-          
-          <a
-            href="https://github.com/Ankush-verma-Source/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: " rgb(178, 107, 232)", cursor: "pointer" }}
-          >
-            <FaGithub
-              size={28}
-              className="icon"
-              style={{ color: "rgb(178, 107, 232)", cursor: "pointer" }}
-            />
-            {/* github */}
-          </a>
-
-          <a
-            href="mailto:ankushverma100009@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: " rgb(178, 107, 232)", cursor: "pointer" }}
-          >
-            {/* mail */}
-            <i
-              className="fa-solid fa-envelope"
-              style={{ color: "rgb(178, 107, 232)", fontSize: "1.8rem" }}
-            ></i>
-          </a>
-        </div>
-      </div>
+      {/* Find me on block moved to contact section */}
     </div>
   );
 }

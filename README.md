@@ -6,34 +6,32 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 [Check out my live portfolio here!](https://ankushvermaportfolio.netlify.app/)
 
 ## ✨ Features
-- **Responsive Design**: Fully optimized for all screen sizes (mobile, tablet, desktop) using Tailwind CSS and Bootstrap.
-- **Interactive Hero Section**: Features a dynamic typing animation and professional Lottie animations.
-- **About Me**: Detailed overview of my background, skills, and aspirations as a developer.
-- **Projects**: Showcasing key work and contributions (Coming Soon/In Development).
-- **Contact Form**: Built with EmailJS for direct communication.
-- **Interactive UI**: Parallax tilt effects and smooth transitions using modern React libraries.
-- **Seamless Navigation**: Multi-page experience powered by React Router.
+- **Responsive Design**: Fully optimized for all screen sizes (mobile, tablet, desktop) using modern CSS utilities.
+- **Interactive Hero Section**: Features a dynamic typing animation, professional Lottie animations, and quick access anchor buttons.
+- **About Me & Skills**: Detailed overview of my background, technical proficiencies, and aspirations as a developer.
+- **Contact Form**: Functional messaging system built with EmailJS for direct communication.
+- **Interactive UI**: Custom gradient stylings, smooth hover transitions, and engaging animations for a premium user experience.
+- **Seamless Navigation**: Modern single-page scrolling interface with a sticky unified header.
 
 ## 🛠️ Tech Stack
 - **Framework**: [React.js (v19)](https://react.dev/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS (v4)](https://tailwindcss.com/) & [Bootstrap 5](https://getbootstrap.com/)
-- **Animations**: [Lottie-react](https://github.com/Gamote/lottie-react), [React Simple Typewriter](https://github.com/awerecodes/react-simple-typewriter), [React Parallax Tilt](https://github.com/mkosir/react-parallax-tilt)
+- **Styling**: [Tailwind CSS (v4)](https://tailwindcss.com/), [Bootstrap 5](https://getbootstrap.com/), and custom pure CSS modules
+- **Animations**: [Lottie-react](https://github.com/Gamote/lottie-react), [React Simple Typewriter](https://github.com/awerecodes/react-simple-typewriter)
 - **Icons**: [React Icons](https://react-icons.github.io/react-icons/), [Font Awesome](https://fontawesome.com/)
-- **Routing**: [React Router](https://reactrouter.com/)
 - **Integration**: [EmailJS](https://www.emailjs.com/)
 
 ## 📁 Project Structure
 ```text
 Portfolio/
-├── public/              # Static assets (images, icons, resumes)
+├── public/              # Static assets (images, animations, PDFs)
 ├── src/
-│   ├── components/      # UI Components (Home, About, Projects, Resume, Contact)
-│   ├── App.jsx          # Main App component & routing
-│   ├── index.css        # Global styles & Tailwind configuration
-│   └── main.jsx         # Entry point
-├── index.html           # Main HTML file
-├── vite.config.js       # Vite configuration
+│   ├── components/      # Structured UI Sections (Home, About, Resume, Contact, Navbar, Footer)
+│   ├── App.jsx          # Core layout composing sections sequentially
+│   ├── index.css        # Global styles, UI utility classes, and scrolling behavior
+│   └── main.jsx         # Application entry point
+├── index.html           # Base HTML structure
+├── vite.config.js       # Vite build configuration
 └── package.json         # Project dependencies and scripts
 ```
 

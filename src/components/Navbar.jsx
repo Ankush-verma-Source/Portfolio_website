@@ -1,11 +1,9 @@
-import { Link,NavLink } from "react-router-dom";
-
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-transparent my-navbar ">
+      <nav className="navbar navbar-expand-lg bg-transparent my-navbar sticky-top">
         <div className="container-lg">
-          <Link className="navbar-brand custom-brand" to="/">
+          <a className="navbar-brand custom-brand" href="#home">
             <span className="brand-name">Portfolio</span>
             <span className="separator"> | </span>
             <span className="tag-wrapper">
@@ -15,7 +13,7 @@ function Navbar() {
               <span className="surname">Verma</span>
               <span className="tag">&gt;</span>
             </span>
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -31,29 +29,29 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <NavLink className={({isActive})=>`nav-link ${isActive?"active":""}`}  to="/">
+                <a className="nav-link" href="#home">
                   Home
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink className={({isActive})=>`nav-link ${isActive?"active":""}`} to="/about">
+                <a className="nav-link" href="#about">
                   About
-                </NavLink>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#skills">
+                  Skills
+                </a>
               </li>
                <li className="nav-item">
-                <NavLink className={({isActive})=>`nav-link ${isActive?"active":""}`}  to="/resume">
+                <a className="nav-link" href="#resume">
                   Resume
-                </NavLink>
+                </a>
               </li>
-              {/* <li className="nav-item">
-                <NavLink  className={({isActive})=>`nav-link ${isActive?"active":""}`} to="/projects">
-                  Projects
-                </NavLink>
-              </li> */}
               <li className="nav-item">
-                <NavLink  className={({isActive})=>`nav-link ${isActive?"active":""}`} to="/contact">
-                  Contact
-                </NavLink>
+                <a className="nav-link" href="#contact">
+                  Get in Touch
+                </a>
               </li>
             </ul>
           </div>

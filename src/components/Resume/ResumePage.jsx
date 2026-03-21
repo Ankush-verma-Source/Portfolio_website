@@ -1,12 +1,9 @@
-import { FaCloudDownloadAlt } from "react-icons/fa";
+// Duplicate download button and icon removed
 
 function ResumePage() {
   return (
     <div className="container-lg my-resume-container mb-5">
-      <h1
-        className="text-center"
-        style={{ color: "#EE82EE", fontWeight: "bold" }}
-      >
+      <h1 className="text-center text-violet fw-bold">
         My Resume
       </h1>
       {/* <p className="text-center" style={{ color: "grey", fontWeight: "bold" }}>
@@ -23,11 +20,7 @@ function ResumePage() {
         </div>
       </section>
       
-      <a href="/assets/resume.pdf" download style={{ textDecoration: "none" }}>
-        <button className="btn btn-primary px-4 py-2">
-          <FaCloudDownloadAlt size={20} /> Download
-        </button>
-      </a>
+      {/* Bottom download button removed since it's now in the Hero section */}
     </div>
   );
 }
